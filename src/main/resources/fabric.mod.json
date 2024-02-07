@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "item_slimes",
+  "version": "${version}",
+  "name": "ItemSlimes",
+  "description": "A mod that adds slimes with items trapped in their body!",
+  "authors": [
+    "CyborgPigeon"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/item_slimes/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.hyper_pigeon.item_slimes.client.ItemSlimesClient"
+    ],
+    "main": [
+      "net.hyper_pigeon.item_slimes.ItemSlimes"
+    ]
+  },
+  "mixins": [
+    "item_slimes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.23",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
